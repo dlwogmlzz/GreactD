@@ -18,10 +18,11 @@ export default defineConfig({
     },
   },
   // SCSS 파일을 전역적으로 사용
+  // import 시작을 위에 설정한 @으로 해야됨..
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/assets/styles/main.scss";`,
+        additionalData: `@import "@/assets/styles/main.scss";`,
       }
     }
   }

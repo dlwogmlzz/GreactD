@@ -15,6 +15,7 @@ function App() {
         <Route index path="/" element={ <MainPage /> }></Route>
         <Route index path="/about" element={ <AboutPage /> }></Route>
         {/* about 페이지의 구조는 따르되, ":id" 같은 특정값을 넣어줘서 파라미터에 따라 내용물을 달리 보이게 할수 있다.  */}
+        {/* 그래서 Router를 통해서 공통적인 페이지 컴포넌트를 활용할 수 있다.(동시에 접근 가능.) */}
         <Route index path="/about/:id" element={ <AboutPage /> }></Route>
       </Routes>
     </BrowserRouter>

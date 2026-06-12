@@ -14,7 +14,7 @@ function App() {
         {/* 엘리멘트( {} )안에 그냥 변수를 넣는 것이 아니라, 컴포넌트형식( <> )으로 넣어줘야 한다. */}
         <Route index path="/" element={ <MainPage /> }></Route>
         <Route index path="/about" element={ <AboutPage /> }></Route>
-        {/* about 페이지의 구조는 따르되, 파라미터에 따라 내용물을 달리 보이게 하기 위해서는 */}
+        {/* about 페이지의 구조는 따르되, ":id" 같은 특정값을 넣어줘서 파라미터에 따라 내용물을 달리 보이게 할수 있다.  */}
         <Route index path="/about/:id" element={ <AboutPage /> }></Route>
       </Routes>
     </BrowserRouter>
